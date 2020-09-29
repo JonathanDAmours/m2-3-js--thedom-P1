@@ -5,6 +5,10 @@ const strLength = require("../fundamentals-3.0");
 test("Exercise 0", function () {
   expect(strLength("max")).toBe(3);
   // add more tests here...
+  expect(strLength("Mutan")).toBe(5);
+  expect(strLength("coucou")).toBe(6);
+  expect(strLength("iloveyou")).toBe(8);
+  //
   expect(strLength("abcdefghijklmnop")).toBe(16);
   expect(strLength("This is a test case.")).toBe(20);
   expect(strLength("")).toBe(undefined);
@@ -12,6 +16,6 @@ test("Exercise 0", function () {
   expect(strLength(["abcdefghijklmnop"])).toBe(undefined);
 });
 
-// Run your test by typing yarn test fundamentals-3.1 in the terminal.
+// Run your test by typing yarn test fundamentals-3.0 in the terminal.
 
 // More info on jest expect: https://jestjs.io/docs/en/expect

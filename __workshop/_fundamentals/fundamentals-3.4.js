@@ -9,6 +9,15 @@
 
 function sum(arr) {
   // Your code here
+  if (arr.some(isNaN)) {
+    return undefined;
+  } else {
+    let total = 0;
+    for (i = 0; i < arr.length; ++i) {
+      total += arr[i];
+    }
+    return total;
+  }
 }
 
 // Part 2 - Test

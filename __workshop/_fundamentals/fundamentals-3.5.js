@@ -11,6 +11,12 @@
 
 function getLetterAtIndex(str, index) {
   // Your code here
+  let letter = str.charAt(index);
+  console.log(letter);
+  if (typeof str !== "string" || letter == "" || !isNaN(letter)) {
+    return undefined;
+  }
+  return letter;
 }
 
 // Part 2 - Test

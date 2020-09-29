@@ -2,17 +2,35 @@
 //
 // Part 1 - Write
 // ---------------
-// Write a function that accepts an array with 2 values,
+// Write a function that accepts an array with 2 values, √
 // and returns a new string made of the original string repeated by the provided number of times.
 //
-// - The first value of the array must be a string, and the second a number.
+// - The first value of the array must be a string, and the second a number. √
 // - If a negative number or zero is specified, return an empty string.
 // - If any invalid parameters are supplied return undefined.
 //
 // example: repeat(['foo', 3]) returns 'foofoofoo'
 
 function repeat(arr) {
-  // Your code here
+  let newStr = arr[0].repeat(arr[1]);
+  if (typeof arr[0] !== "string" && typeof arr[1] !== "number" && arr[1] <= 0) {
+    return undefined;
+  } else {
+    return newStr;
+  }
+
+  // switch (arr[1]) {
+  //   case "add":
+  //     return arr[1] + arr[2];
+  //   case "sub":
+  //     return arr[1] - arr[2];
+  //   case "mul":
+  //     return arr[1] * arr[2];
+  //   case "div":
+  //     return arr[1] / arr[2];
+  //   default:
+  //     return undefined;
+  // }
 }
 
 // Part 2 - Test

@@ -6,6 +6,10 @@ test("Exercise 2", () => {
   expect(lastCharacter("max")).toBe("x");
   expect(lastCharacter(23232)).toBe(undefined);
   // add more tests here...
+  expect(lastCharacter("joe")).toBe("e");
+  expect(lastCharacter(4654453)).toBe(undefined);
+  expect(lastCharacter("Harris")).toBe("s");
+  expect(lastCharacter(["Myself"])).toBe(undefined);
 });
 
 // Run your test by typing yarn test fundamentals-3.2 in the terminal.
